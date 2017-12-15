@@ -233,6 +233,45 @@ a {
 }
 
 
+/* languages pages */
+
+.language {
+    background: #fff;
+    color: #000;
+}
+
+.language .navbar {
+    margin-bottom: 1em;
+}
+
+.language .img {
+    margin-bottom: 1em;
+}
+
+.language .txt {
+    text-align: left
+}
+
+.language h2 {
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.language .txt p {
+    padding: .25em;
+    margin-bottom: .5em;
+}
+
+.language .txt ul {
+    list-style: circle;
+    margin-left: 1em;
+}
+
+.language .txt .description {
+    margin: 1em 0 3em;
+}
+
+
 /* ================================= 
   Media Queries
 ==================================== */
@@ -293,7 +332,7 @@ a {
         grid-template-columns: 2fr 1fr 3fr;
         grid-template-areas: "lang-img . lang-text";
     }
-    .languages-list .lang:nth-child(even) img{
+    .languages-list .lang:nth-child(even) img {
         justify-self: start;
     }
     .languages-list .lang:nth-child(odd) {
@@ -301,7 +340,7 @@ a {
         grid-template-columns: 3fr 1fr 2fr;
         grid-template-areas: "lang-text . lang-img";
     }
-    .languages-list .lang:nth-child(odd) img{
+    .languages-list .lang:nth-child(odd) img {
         justify-self: end;
     }
     .languages-list .lang:last-child {
@@ -318,6 +357,18 @@ a {
     }
     .languages-list .lang div {
         grid-area: lang-text;
+    }
+    /* languges page */
+    .language .content {
+        display: grid;
+        grid-template-columns: 5fr 1fr 2fr;
+        grid-template-areas: "lang-txt . lang-img";
+    }
+    .language .img {
+        grid-area: lang-img;
+    }
+    .language .txt {
+        grid-area: lang-txt;
     }
 }
 
