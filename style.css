@@ -1,0 +1,284 @@
+/* Core Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+a {
+    text-decoration: none
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid #666;
+    margin: 0.5em 0;
+}
+
+.btn:hover {
+    background: #eaeaea;
+    color: #333;
+}
+
+
+/* Header Showcase */
+
+.showcase {
+    min-height: 450px;
+    color: #fff;
+    text-align: center;
+}
+
+.showcase .bg-image {
+    position: absolute;
+    background: #333 url("http://lorempixel.com/500/500");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.showcase h1 {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+.showcase .content-wrap,
+.section-a .content-wrap {
+    padding: 0 1.5em;
+}
+
+
+/* navbar */
+
+.navbar {
+    border: 1px solid #a2a2a2;
+    background-color: #f4f4f4;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+}
+
+.navbar a {
+    color: #34495e;
+}
+
+.navbar .brand {
+    margin: 0;
+    font-size: 1.45em;
+}
+
+.navbar ul {
+    margin-top: 0.25em;
+}
+
+.navbar .brand a,
+.navbar ul a {
+    padding: .5em 1em;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+}
+
+.navbar ul a {
+    color: #34495e;
+}
+
+.navbar ul a:hover {
+    color: #718daa;
+}
+
+
+/* Section A */
+
+.section-a {
+    background: #eaeaea;
+    color: #333;
+    padding-bottom: 2em;
+}
+
+
+/* Section B */
+
+.section-b {
+    padding: 2em 1em 1em;
+}
+
+.section-b ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.section-b li {
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333;
+}
+
+.section-b .content-title:after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 3px;
+    background-color: #eaeaea;
+    margin: 15px auto 30px;
+}
+
+.section-b .card-content {
+    padding: 1.5em;
+}
+
+.section-b .btn {
+    display: block;
+    border-radius: 25px;
+}
+
+
+/* Section C */
+
+.section-c {
+    background: #fff;
+    color: #333;
+    padding: 2em;
+}
+
+
+/* Section D / Boxes */
+
+.section-d .box {
+    padding: 2em;
+    color: #fff;
+}
+
+.section-d .box:first-child {
+    background: #2690d4;
+}
+
+
+/* Footer */
+
+.main-footer {
+    padding: 2em;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.main-footer a {
+    color: #2690d4;
+    text-decoration: none;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+    .navbar .container,
+    .navbar ul {
+        display: flex;
+    }
+    .navbar .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    .navbar .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+    .section-a .content-text {
+        columns: 2;
+        column-gap: 2em;
+    }
+    .section-a .content-text p {
+        padding-top: 0;
+    }
+    .content-wrap,
+    .section-b ul {
+        grid-column: 2/4;
+    }
+    .box,
+    .main-footer div {
+        grid-column: span 2;
+    }
+    .section-b ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .section-b li {
+        width: 31%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
