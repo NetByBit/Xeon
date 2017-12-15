@@ -189,6 +189,28 @@ a {
     padding: 2em;
 }
 
+.section-c .content-title + p {
+    margin-bottom: 4em;
+}
+
+.section-c .content-title + p small {
+    margin-top: 1em;
+    display: block;
+}
+
+.languages-list {
+    
+}
+
+.languages-list .lang {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.25);
+}
+
+.languages-list .lang p {
+    padding: 1em;
+}
 
 /* Section D / Boxes */
 
@@ -268,6 +290,35 @@ a {
     }
     .section-b li {
         width: 31%;
+    }
+
+    .languages-list .lang {
+        display: grid;
+        margin-bottom: 1em;
+    }
+    
+    .languages-list .lang:nth-of-type(even) {
+        text-align: right;
+        grid-template-columns: 2fr 1fr 3fr;
+        grid-template-areas:
+        "lang-img . lang-text";
+    }
+    .languages-list .lang:nth-of-type(odd) {
+        text-align: left;
+        grid-template-columns: 3fr 1fr 2fr;
+        grid-template-areas:
+        "lang-text . lang-img";
+    }
+    
+    .languages-list .lang img{
+        grid-area: lang-img;
+    }
+    .languages-list .lang div{
+        grid-area: lang-text;
+    }
+    
+    .languages-list .lang p {
+        padding: 1em;
     }
 }
 
