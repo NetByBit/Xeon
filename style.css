@@ -21,7 +21,7 @@ ul {
 
 img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -151,7 +151,6 @@ a {
 }
 
 .section-b ul {
-    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -189,18 +188,16 @@ a {
     padding: 2em;
 }
 
-.section-c .content-title + p {
+.section-c .content-title+p {
     margin-bottom: 4em;
 }
 
-.section-c .content-title + p small {
+.section-c .content-title+p small {
     margin-top: 1em;
     display: block;
 }
 
-.languages-list {
-    
-}
+.languages-list {}
 
 .languages-list .lang {
     margin-bottom: 1em;
@@ -208,9 +205,6 @@ a {
     border-bottom: 1px solid rgba(51, 51, 51, 0.25);
 }
 
-.languages-list .lang p {
-    padding: 1em;
-}
 
 /* Section D / Boxes */
 
@@ -267,7 +261,7 @@ a {
     }
     .grid {
         display: grid;
-        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 32em)) 1fr;
     }
     .section-a .content-text {
         columns: 2;
@@ -291,34 +285,39 @@ a {
     .section-b li {
         width: 31%;
     }
-
     .languages-list .lang {
         display: grid;
-        margin-bottom: 1em;
     }
-    
-    .languages-list .lang:nth-of-type(even) {
+    .languages-list .lang:nth-child(even) {
         text-align: right;
         grid-template-columns: 2fr 1fr 3fr;
-        grid-template-areas:
-        "lang-img . lang-text";
+        grid-template-areas: "lang-img . lang-text";
     }
-    .languages-list .lang:nth-of-type(odd) {
+    .languages-list .lang:nth-child(even) img{
+        justify-self: start;
+    }
+    .languages-list .lang:nth-child(odd) {
         text-align: left;
         grid-template-columns: 3fr 1fr 2fr;
-        grid-template-areas:
-        "lang-text . lang-img";
+        grid-template-areas: "lang-text . lang-img";
     }
-    
-    .languages-list .lang img{
+    .languages-list .lang:nth-child(odd) img{
+        justify-self: end;
+    }
+    .languages-list .lang:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .languages-list .lang p {
+        padding: 0 .25em;
+    }
+    .languages-list .lang img {
+        max-height: 16em;
         grid-area: lang-img;
     }
-    .languages-list .lang div{
+    .languages-list .lang div {
         grid-area: lang-text;
-    }
-    
-    .languages-list .lang p {
-        padding: 1em;
     }
 }
 
