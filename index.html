@@ -5,39 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xeon</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="home">
     <!-- Header Showcase -->
     <header class="grid showcase">
         <div class="bg-image"></div>
         <div class="content-wrap">
             <h1>Welcome to Xeon</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci eum error earum soluta voluptatum nisi laboriosam
-                eos saepe asperiores dolorum.</p>
+            <p>Xeon is a fanbase located in Egypt dedicated to explor all of the IT world and the programming languages of it.</p>
             <a href="#section-b" class="btn">Read More</a>
         </div>
     </header>
 
     <nav class="navbar">
         <div class="container">
-            <h1 class="brand">
+            <h3 class="brand">
                 <a href="#">Xeon</a>
-            </h1>
+            </h3>
             <ul>
                 <li>
                     <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#">TOP3</a>
                 </li>
+
                 <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
+                    <a href="contact-us.html">Contact</a>
                 </li>
             </ul>
         </div>
@@ -45,53 +42,57 @@
 
     <!-- Main Area -->
     <main>
-        <!-- Section A -->
-        <section class="grid section-a">
-            <div class="content-wrap">
-                <h2 class="content-title">Web & Application Development</h2>
-                <div class="content-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde officiis
-                        magnam laborum ipsa distinctio odio, vero dolores dicta aliquam aperiam repellendus. Perferendis
-                        officiis deserunt velit voluptas nobis sequi animi totam, accusantium, ex eius quia, natus quo?</p>
+        <!-- intro -->
+        <section class="intro">
+            <div class="container">
+                <div class="content-wrap">
+                    <h2 class="content-title">What's a programming language?</h2>
+                    <div class="content-text">
+                        <p>A programming language is a formal language that specifies a set of instructions that can be used to
+                            produce various kinds of output. Programming languages generally consist of instructions for a computer.
+                            Programming languages can be used to create programs that implement specific algorithms.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </section>
 
-        <!-- Section B -->
-        <section class="section-b">
+        <!-- top-3 -->
+        <section class="top-3">
             <h2 class="content-title">Top 3 languages</h2>
-            <div class="container grid">
+            <div class="container">
                 <ul>
                     <li>
                         <div class="card">
-                            <img src="http://placehold.it/500/ddd" alt="">
+                            <img src="pictures/java.jpg" alt="">
                             <div class="card-content">
-                                <h3 class="card-title">Web Development</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi
-                                    velit voluptatum cum maiores exercitationem.</p>
+                                <h3 class="card-title">Java</h3>
+                                <p>Java is a general-purpose computer programming language that is concurrent, class-based,
+                                    object-oriented, and specifically designed to have as few implementation dependencies
+                                    as possible.</p>
+                                <a href="languages/jave.html" class="btn">Read more.</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <img src="pictures/Python.jpg" alt="">
+                            <div class="card-content">
+                                <h3 class="card-title">Python</h3>
+                                <p>Python is a widely used high-level programming language for general-purpose programming,
+                                    created by Guido van Rossum and first released in 1991. First appeared: 20 February 1991;
+                                    26 years ago</p>
                                 <a href="languages/python.html" class="btn">Read more.</a>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="card">
-                            <img src="http://placehold.it/600/ddd" alt="">
+                            <img src="pictures/c.jpg" alt="">
                             <div class="card-content">
-                                <h3 class="card-title">Mobile Applications</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi
-                                    velit voluptatum cum maiores exercitationem.</p>
-                                <a href="languages/python.html" class="btn">Read more.</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card">
-                            <img src="http://placehold.it/800/ddd" alt="">
-                            <div class="card-content">
-                                <h3 class="card-title">Tech Marketing</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi
-                                    velit voluptatum cum maiores exercitationem.</p>
-                                <a href="languages/python.html" class="btn">Read more.</a>
+                                <h3 class="card-title">C#</h3>
+                                <p>C# is a multi-paradigm programming language encompassing strong typing, imperative, declarative,
+                                    functional, generic, object-oriented, and component-oriented programming disciplines.</p>
+                                <a href="languages/cs.html" class="btn">Read more.</a>
                             </div>
                         </div>
                     </li>
@@ -99,84 +100,99 @@
             </div>
         </section>
 
-        <!-- Section C -->
-        <section class="grid section-c">
-            <div class="content-wrap">
-                <h2 class="content-title">Other languages</h2>
-                <p>
-                    languages that didn't make it in top 3. bla bla bla
-                    <small>
-                        <strong>Note:</strong> this ranking is based on our personal opinion.</small>
-                </p>
-                <div class="languages-list">
-                    <div class="lang">
-                        <img src="http://placehold.it/1600/ddd">
-                        <div>
-                            <h3>Name</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem, rerum consequuntur neque
-                                itaque qui, ea sit explicabo quis optio incidunt nesciunt cumque! Perspiciatis quos ab aliquam
-                                sequi esse rerum.</p>
+        <!-- other-langs -->
+        <section class="other-langs">
+            <div class="container">
+
+                <div class="content-wrap">
+                    <h2 class="content-title">Other languages</h2>
+                    <p>
+                        languages that didn't make it in top 3. but are important!
+                        <small>
+                            <strong>Note:</strong> this ranking is based on our personal opinion.</small>
+                    </p>
+                    <div class="languages-list">
+                        <div class="lang">
+                            <img src="pictures/ror.png">
+                            <div>
+                                <h3>Ruby</h3>
+                                <p>Ruby (also known as Ruby on Rails) is a major supplier of web apps. Ruby is popular due to
+                                    its ease of learning (it's very straightforward) and power. Ruby knowledge is in high
+                                    demand these days!</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="lang">
-                        <img src="http://placehold.it/800/ddd">
-                        <div>
-                            <h3>Name</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem, rerum consequuntur neque
-                                itaque qui, ea sit explicabo quis optio incidunt nesciunt cumque! Perspiciatis quos ab aliquam
-                                sequi esse rerum.</p>
+                        <div class="lang">
+                            <img src="pictures/js.jpg">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>JavaScript (which, confusingly, is not at all related to Java) is another favorite programming
+                                    language because it's so ubiquitous on the web--it's basically everywhere. JavaScript
+                                    allows developers to add interactive elements to their website, and its presence is felt
+                                    across the internet. At WordStream, we use a JavaScript library called JQuery to make
+                                    our JavaScript work even easier.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="lang">
-                        <img src="http://placehold.it/800/ddd">
-                        <div>
-                            <h3>Name</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem, rerum consequuntur neque
-                                itaque qui, ea sit explicabo quis optio incidunt nesciunt cumque! Perspiciatis quos ab aliquam
-                                sequi esse rerum.</p>
+                        <div class="lang">
+                            <img src="pictures/c.png">
+                            <div>
+                                <h3>Objective-C</h3>
+                                <p>Objective-C is the programming language behind iOS apps. Apple's new language Swift is rising
+                                    in the ranks, but Objective-C is still the recommended starting point for those looking
+                                    to craft Apple apps for iPhones and iPads. Next stop--the iOS App Store!
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="lang">
-                        <img src="http://placehold.it/800/ddd">
-                        <div>
-                            <h3>Name</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem, rerum consequuntur neque
-                                itaque qui, ea sit explicabo quis optio incidunt nesciunt cumque! Perspiciatis quos ab aliquam
-                                sequi esse rerum.</p>
+                        <div class="lang">
+                            <img src="pictures/php.jpg">
+                            <div>
+                                <h3>PHP</h3>
+                                <p>PHP (which stands for Hypertext Preprocessor, if you care to know) is often used in conjunction
+                                    with dynamic data-heavy websites and app development. It provides a ton of power and
+                                    is the beating heart of monster sites like WordPress and Facebook. What's really cool
+                                    about PHP is that it's an open-source language, so there are tons of free pre-built modules
+                                    that you can grab and modify to get your ideal results. PHP is also on the easy end of
+                                    the learning spectrum, simply requiring you to embed the code within HTML. PHP is a must-learn
+                                    language for aspiring web developers.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section D -->
-        <section class="grid section-d">
+        <!-- boxes -->
+        <section class="grid boxes">
             <div class="box">
                 <h2 class="content-title">Contact Us</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et voluptas
-                    obcaecati unde fuga.</p>
+                <p>If you would like to add a language to our list please feel free to contact us at</p>
                 <p>contact@Xeonwebsolutions.test</p>
             </div>
             <div class="box">
                 <h2 class="content-title">About Our Company</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum porro deserunt, deleniti, quae
-                    facere repudiandae, officiis est exercitationem nobis iusto doloremque! Soluta excepturi in aut suscipit
-                    amet temporibus quo?
+                <p>This design couldn't have come to life without the help of these awesome people
+                    <ul>
+                        <li>Amr Abdelhamid</li>
+                        <li>Mustafa Daoud</li>
+                        <li>Omar Assad</li>
+                        <li>Amr Medhat</li>
+                    </ul>
                 </p>
+            </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer class="grid main-footer">
-        <div>Xeon</div>
+        <div>copyright &copy; Xeon 2017 </div>
         <div>Project By
-            <a href="#" target="_blank">us</a>
+            <a href="http://web-point.github.io/" target="_blank">WebPoint</a>
         </div>
     </footer>
 
-    <script src="jquery-3.2.1.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
