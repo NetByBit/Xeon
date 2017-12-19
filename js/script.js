@@ -69,9 +69,17 @@ $(function () {
         $('.name, .company, .email, .phone, .message').blur();
 
         if (nameError || companyError || emailError || phoneError || msgError) {
-            alert('please fill all feilds');
+            swal({
+                title: "Inavalid inputs!",
+                text: "Please fill inputs with the right value",
+                icon: "error",
+              });
         } else {
-            alert('valid');
+            swal({
+                title: "Success!",
+                text: "Thank you for contactiong us",
+                icon: "success",
+              });
         }
         e.preventDefault();
     });
