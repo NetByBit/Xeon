@@ -51,7 +51,7 @@ a {
     padding: .5em 1em;
     border: 1px solid #e62739;
     margin: 0.5em 0;
-    transition: all .5s ease-in-out; 
+    transition: all .5s ease-in-out;
 }
 
 .btn:hover {
@@ -83,6 +83,9 @@ body.home {
 
 .showcase {
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .showcase .bg-image {
@@ -99,7 +102,6 @@ body.home {
 }
 
 .showcase h1 {
-    padding-top: 100px;
     padding-bottom: 0;
 }
 
@@ -200,7 +202,7 @@ body.home {
 .languages-list .lang {
     margin-bottom: 1em;
     padding-bottom: 1em;
-    border-bottom: 1px solid rgba(57,62,65, 0.25);
+    border-bottom: 1px solid rgba(57, 62, 65, 0.25);
 }
 
 .testimonials {
@@ -221,7 +223,7 @@ body.home {
     width: 100%;
     height: 100%;
     color: #F6F7EB;
-    background-color: rgba(57,62,65, .85);
+    background-color: rgba(57, 62, 65, .85);
 }
 
 .testimonials h2 {
@@ -262,15 +264,17 @@ body.home {
 .boxes .box:first-child {
     background: #e62739;
 }
+
 .boxes .box:first-child p {
-    line-height: 3;    
+    line-height: 3;
 }
+
 .boxes .box:first-child a {
-    /* display: block; */
     margin: 1em 0;
     color: #F6F7EB;
     text-decoration: underline;
 }
+
 
 /* Footer */
 
@@ -333,7 +337,7 @@ body.home {
     text-decoration: underline;
 }
 
-.company-info > * {
+.company-info>* {
     text-align: center;
     margin: 0 0 1rem 0;
     color: #F6F7EB;
@@ -393,7 +397,6 @@ body.home {
         padding: 0em 1em;
     }
     .showcase h1 {
-        padding-top: 30vh;
         padding-bottom: 0;
     }
     .contact-wrapper>* {
