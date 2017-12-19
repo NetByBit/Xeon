@@ -343,14 +343,14 @@ body.home {
 }
 
 .contact form button {
-    background: #c9e6ff;
+    background: #c3c388;
     border: 0;
     text-transform: uppercase;
 }
 
 .contact form button:hover,
 .contact form button:focus {
-    background: #92bde7;
+    background: #888844;
     color: #fff;
     outline: 0;
     transition: background-color 2s ease-out;
