@@ -76,6 +76,7 @@ body.home {
     background: #393E41;
     color: #F6F7EB;
     text-align: center;
+    overflow-x: hidden;
 }
 
 
@@ -83,6 +84,7 @@ body.home {
 
 .showcase {
     min-height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -90,19 +92,34 @@ body.home {
 
 .showcase .bg-image {
     position: absolute;
-    background: url("../img/showcase.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     width: 100%;
     height: 100vh;
     z-index: -1;
     opacity: 0.4;
 }
 
+.showcase .bg-image video {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.header-overlay {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: #e62739;
+    opacity: 0.08;
+}
+
+.showcase .container {
+    z-index: 2;
+}
+
 .showcase h1 {
-    padding-bottom: 0;
+    /* padding-bottom: 0; */
 }
 
 .showcase .content-wrap,
