@@ -418,7 +418,6 @@ body.home {
     .top-3 li:hover {
         transform: scale(1.05);
     }
-    .languages-list .lang {}
     .languages-list .lang img {
         width: 25%;
     }
