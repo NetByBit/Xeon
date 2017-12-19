@@ -1,9 +1,9 @@
 ## TODO
 
-- [ ] remove grid
+- [X] remove grid
 - [X] use img folder for all pictures
 - [ ] fix nav links
 - [ ] add extra page
-- [ ] add extra section
+- [X] add extra section
 - [ ] fix contact Form text
-- [ ] add right text boxes
+- [ ] add left text in boxes

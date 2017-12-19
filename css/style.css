@@ -141,6 +141,7 @@ body.home {
 
 
 /* intro */
+
 .intro {
     background: #eaeaea;
     color: #333;
@@ -200,6 +201,54 @@ body.home {
     border-bottom: 1px solid rgba(51, 51, 51, 0.25);
 }
 
+.testimonials {
+    background: url('../img/testimonials.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    padding: 10em 0;
+}
+
+.testimonials .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(51, 51, 51, .8);
+}
+
+.testimonials h2 {
+    font-size: 2em;
+    margin: 1em 0 .5em;
+}
+
+.testimonials q {
+    font-size: 1.3em;
+    line-height: 2;
+    color: #fff;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.testimonials span {
+    display: block;
+    font-size: 30px;
+    color: #2690d4;
+}
+
+.testimonials .slider>div {
+    display: none;
+}
+
+.testimonials .slider>.active {
+    display: block;
+}
+
 
 /* Boxes */
 
@@ -229,6 +278,7 @@ body.home {
 
 
 /* languages pages */
+
 .language .img {
     margin-bottom: 1em;
 }
@@ -260,7 +310,7 @@ body.home {
     margin-bottom: 1em;
 }
 
-.contact-wrapper > * {
+.contact-wrapper>* {
     padding: 1em;
 }
 
@@ -271,6 +321,10 @@ body.home {
 .company-info>* {
     text-align: center;
     margin: 0 0 1rem 0;
+}
+
+.contact label {
+    margin-bottom: .5em;
 }
 
 
@@ -326,7 +380,7 @@ body.home {
         padding-top: 30vh;
         padding-bottom: 0;
     }
-    .contact-wrapper > * {
+    .contact-wrapper>* {
         padding: 2em;
     }
     .contact-wrapper .contact div {
@@ -364,14 +418,10 @@ body.home {
     .top-3 li:hover {
         transform: scale(1.05);
     }
-    .languages-list .lang {
-
-    }
-
+    .languages-list .lang {}
     .languages-list .lang img {
         width: 25%;
     }
-
     .languages-list .lang:nth-child(even) {
         text-align: right;
     }
@@ -396,10 +446,6 @@ body.home {
     }
     .languages-list .lang img {
         max-height: 16em;
-        grid-area: lang-img;
-    }
-    .languages-list .lang div {
-        grid-area: lang-text;
     }
     /* languges page */
     .language .img {
@@ -410,14 +456,12 @@ body.home {
         width: 60%;
         float: left;
     }
-
     /* contact page */
     .contact-wrapper {
         display: table;
         width: 100%;
-        /* grid-template-columns: 1fr 2fr; */
     }
-    .contact-wrapper > * {
+    .contact-wrapper>* {
         display: table-cell;
     }
     .company-info {
@@ -426,12 +470,12 @@ body.home {
     .contact {
         width: 67%;
     }
-    .contact form > div {
+    .contact form>div {
         width: 49%;
         margin-right: 2%;
         float: left;
     }
-    .contact form > div:nth-child(even) {
+    .contact form>div:nth-child(even) {
         margin-right: 0;
     }
     .contact form .full {
