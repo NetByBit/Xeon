@@ -1,7 +1,7 @@
 ## TODO
 
 - [ ] remove grid
-- [ ] use img folder for all pictures
+- [X] use img folder for all pictures
 - [ ] fix nav links
 - [ ] add extra page
 - [ ] add extra section

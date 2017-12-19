@@ -255,12 +255,12 @@ body.home {
 
 /* Contact us */
 
-.wrapper {
+.contact-wrapper {
     border: #333 1px solid;
     margin-bottom: 1em;
 }
 
-.wrapper>* {
+.contact-wrapper > * {
     padding: 1em;
 }
 
@@ -326,10 +326,10 @@ body.home {
         padding-top: 30vh;
         padding-bottom: 0;
     }
-    .wrapper>* {
+    .contact-wrapper > * {
         padding: 2em;
     }
-    .wrapper .contact div {
+    .contact-wrapper .contact div {
         margin-bottom: 1em;
     }
 }
@@ -381,8 +381,6 @@ body.home {
     }
     .languages-list .lang:nth-child(odd) {
         text-align: left;
-        grid-template-columns: 3fr 1fr 2fr;
-        grid-template-areas: "lang-text . lang-img";
     }
     .languages-list .lang:nth-child(odd) img {
         float: right;
@@ -414,17 +412,31 @@ body.home {
     }
 
     /* contact page */
-    .wrapper {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
+    .contact-wrapper {
+        display: table;
+        width: 100%;
+        /* grid-template-columns: 1fr 2fr; */
     }
-    .contact form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
+    .contact-wrapper > * {
+        display: table-cell;
+    }
+    .company-info {
+        width: 33%;
+    }
+    .contact {
+        width: 67%;
+    }
+    .contact form > div {
+        width: 49%;
+        margin-right: 2%;
+        float: left;
+    }
+    .contact form > div:nth-child(even) {
+        margin-right: 0;
     }
     .contact form .full {
-        grid-column: 1 / 3;
+        width: 100%;
+        margin-right: 0;
     }
 }
 
