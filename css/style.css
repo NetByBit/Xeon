@@ -8,6 +8,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
     line-height: 1.5;
+    color: #393E41;
+    background: #F6F7EB
 }
 
 ul {
@@ -49,10 +51,11 @@ a {
     padding: .5em 1em;
     border: 1px solid #e62739;
     margin: 0.5em 0;
+    transition: all .5s ease-in-out; 
 }
 
 .btn:hover {
-    background: #eaeaea;
+    background: #F6F7EB;
     color: #e62739;
 }
 
@@ -136,14 +139,14 @@ body.home {
 }
 
 .navbar ul a:hover {
-    color: #718daa;
+    color: #5d656a;
 }
 
 
 /* intro */
 
 .intro {
-    background: #eaeaea;
+    background: #F6F7EB;
     color: #393E41;
     padding-bottom: 2em;
 }
@@ -170,8 +173,7 @@ body.home {
 }
 
 .top-3 .btn {
-    /* display: block; */
-    border-radius: 25px;
+    border-radius: 2em;
 }
 
 
@@ -198,7 +200,7 @@ body.home {
 .languages-list .lang {
     margin-bottom: 1em;
     padding-bottom: 1em;
-    border-bottom: 1px solid rgba(51, 51, 51, 0.25);
+    border-bottom: 1px solid rgba(57,62,65, 0.25);
 }
 
 .testimonials {
@@ -219,7 +221,7 @@ body.home {
     width: 100%;
     height: 100%;
     color: #F6F7EB;
-    background-color: rgba(51, 51, 51, .85);
+    background-color: rgba(57,62,65, .85);
 }
 
 .testimonials h2 {
@@ -237,7 +239,7 @@ body.home {
 
 .testimonials span {
     display: block;
-    font-size: 30px;
+    font-size: 2em;
     color: #e62739;
 }
 
@@ -306,7 +308,7 @@ body.home {
 /* Contact us */
 
 .contact-wrapper {
-    border: #393E41 1px solid;
+    border: 1px #393E41 solid;
     margin-bottom: 1em;
 }
 
@@ -340,7 +342,7 @@ body.home {
 .contact form textarea {
     width: 100%;
     padding: 1em;
-    border: 1px solid #c9e6ff;
+    border: 1px solid #697277;
 }
 
 .contact form button {
@@ -352,7 +354,7 @@ body.home {
 
 .contact form button:hover,
 .contact form button:focus {
-    background: #d63117;
+    background: #c31727;
     outline: 0;
     transition: background-color 1s ease-out;
 }
