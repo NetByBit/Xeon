@@ -344,19 +344,11 @@ body.home {
         flex-direction: row;
         justify-content: space-between;
     }
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr repeat(2, minmax(auto, 32em)) 1fr;
-    }
     .intro .content-text p {
         padding-top: 0;
     }
-    .content-wrap {
-        grid-column: 2/4;
-    }
     .boxes .box,
     .main-footer div {
-        /* grid-column: span 2; */
         width: 50%;
         float: left;
     }
@@ -375,12 +367,19 @@ body.home {
         transform: scale(1.05);
     }
     .languages-list .lang {
-        display: grid;
+
     }
+
+    .languages-list .lang img {
+        width: 25%;
+    }
+
     .languages-list .lang:nth-child(even) {
         text-align: right;
-        grid-template-columns: 2fr 1fr 3fr;
-        grid-template-areas: "lang-img . lang-text";
+    }
+    .languages-list .lang:nth-child(even) img {
+        float: left;
+        margin-right: 3em;
     }
     .languages-list .lang:nth-child(odd) {
         text-align: left;
@@ -388,7 +387,8 @@ body.home {
         grid-template-areas: "lang-text . lang-img";
     }
     .languages-list .lang:nth-child(odd) img {
-        justify-self: end;
+        float: right;
+        margin-left: 3em;
     }
     .languages-list .lang:last-child {
         border-bottom: none;
