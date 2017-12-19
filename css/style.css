@@ -408,10 +408,11 @@ body.home {
         height: 21em;
     }
     .top-3 ul {
-        display: flex;
-        justify-content: space-between;
+        display: table;
+        border-spacing: .35em;
     }
     .top-3 li {
+        display: table-cell;
         width: 32%;
         transition: all 1s ease-in-out;
     }
