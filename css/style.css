@@ -73,7 +73,7 @@ body.home {
 
 .showcase .bg-image {
     position: absolute;
-    background: url("pictures/showcase.jpg");
+    background: url("../pictures/showcase.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
