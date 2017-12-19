@@ -207,7 +207,7 @@ body.home {
     background-attachment: fixed;
     background-position: center;
     position: relative;
-    padding: 10em 0;
+    padding: 13em 0;
 }
 
 .testimonials .overlay {
@@ -446,6 +446,10 @@ body.home {
     }
     .languages-list .lang img {
         max-height: 16em;
+    }
+    /*  */
+    .testimonials {
+        padding: 10em 0;
     }
     /* languges page */
     .language .img {
