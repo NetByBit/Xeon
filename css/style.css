@@ -60,6 +60,12 @@ a {
     font-size: 1.1em;
 }
 
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
 
 /* Home page */
 
@@ -348,9 +354,14 @@ body.home {
     .content-wrap {
         grid-column: 2/4;
     }
-    .box,
+    .boxes .box,
     .main-footer div {
-        grid-column: span 2;
+        /* grid-column: span 2; */
+        width: 50%;
+        float: left;
+    }
+    .boxes .box {
+        height: 20em;
     }
     .top-3 ul {
         display: flex;
