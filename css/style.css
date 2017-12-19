@@ -44,16 +44,16 @@ a {
 
 .btn {
     display: inline-block;
-    background: #393E41;
+    background: #e62739;
     color: #F6F7EB;
     padding: .5em 1em;
-    border: 1px solid #666;
+    border: 1px solid #e62739;
     margin: 0.5em 0;
 }
 
 .btn:hover {
     background: #eaeaea;
-    color: #393E41;
+    color: #e62739;
 }
 
 .content-wrap p {
@@ -110,7 +110,7 @@ body.home {
 
 .navbar {
     border: 1px solid #393E41;
-    background-color: #F6F7EB;
+    background-color: #f1f3e0;
     margin-bottom: 1em;
 }
 
@@ -219,7 +219,7 @@ body.home {
     width: 100%;
     height: 100%;
     color: #F6F7EB;
-    background-color: rgba(51, 51, 51, .8);
+    background-color: rgba(51, 51, 51, .85);
 }
 
 .testimonials h2 {
@@ -238,7 +238,7 @@ body.home {
 .testimonials span {
     display: block;
     font-size: 30px;
-    color: #E94F37;
+    color: #e62739;
 }
 
 .testimonials .slider>div {
@@ -258,21 +258,21 @@ body.home {
 }
 
 .boxes .box:first-child {
-    background: #E94F37;
+    background: #e62739;
 }
 
 
 /* Footer */
 
 .main-footer {
-    padding: 2em 0 3em;
+    padding: 2em 0 2.5em;
     background: #393E41;
     color: #F6F7EB;
     text-align: center;
 }
 
 .main-footer a {
-    color: #E94F37;
+    color: #e62739;
     text-decoration: none;
 }
 
@@ -315,7 +315,7 @@ body.home {
 }
 
 .company-info {
-    background: #E94F37;
+    background: #e62739;
 }
 
 .company-info>* {
@@ -344,7 +344,7 @@ body.home {
 }
 
 .contact form button {
-    background: #E94F37;
+    background: #e62739;
     color: #F6F7EB;
     border: 0;
     text-transform: uppercase;
