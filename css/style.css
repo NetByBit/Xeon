@@ -272,7 +272,7 @@ body.home {
 }
 
 .main-footer a {
-    color: #b37700;
+    color: #f4e3b2;
     text-decoration: none;
 }
 
@@ -315,12 +315,13 @@ body.home {
 }
 
 .company-info {
-    background: #aaaa55;
+    background: #050517;
 }
 
 .company-info>* {
     text-align: center;
     margin: 0 0 1rem 0;
+    color: #d3d5d7;
 }
 
 .contact label {
@@ -343,7 +344,7 @@ body.home {
 }
 
 .contact form button {
-    background: #c3c388;
+    background: #efc88b;
     border: 0;
     text-transform: uppercase;
 }
