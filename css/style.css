@@ -262,7 +262,15 @@ body.home {
 .boxes .box:first-child {
     background: #e62739;
 }
-
+.boxes .box:first-child p {
+    line-height: 3;    
+}
+.boxes .box:first-child a {
+    /* display: block; */
+    margin: 1em 0;
+    color: #F6F7EB;
+    text-decoration: underline;
+}
 
 /* Footer */
 
@@ -320,7 +328,12 @@ body.home {
     background: #e62739;
 }
 
-.company-info>* {
+.company-info a {
+    color: #F6F7EB;
+    text-decoration: underline;
+}
+
+.company-info > * {
     text-align: center;
     margin: 0 0 1rem 0;
     color: #F6F7EB;
