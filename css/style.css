@@ -44,8 +44,8 @@ a {
 
 .btn {
     display: inline-block;
-    background: #333;
-    color: #fff;
+    background: #393E41;
+    color: #F6F7EB;
     padding: .5em 1em;
     border: 1px solid #666;
     margin: 0.5em 0;
@@ -53,7 +53,7 @@ a {
 
 .btn:hover {
     background: #eaeaea;
-    color: #333;
+    color: #393E41;
 }
 
 .content-wrap p {
@@ -70,8 +70,8 @@ a {
 /* Home page */
 
 body.home {
-    background: #333;
-    color: #fff;
+    background: #393E41;
+    color: #F6F7EB;
     text-align: center;
 }
 
@@ -109,8 +109,8 @@ body.home {
 /* navbar */
 
 .navbar {
-    border: 1px solid #a2a2a2;
-    background-color: #f4f4f4;
+    border: 1px solid #393E41;
+    background-color: #F6F7EB;
     margin-bottom: 1em;
 }
 
@@ -119,7 +119,7 @@ body.home {
 }
 
 .navbar a {
-    color: #34495e;
+    color: #393E41;
     padding: .35em 1em;
     text-transform: uppercase;
     text-align: center;
@@ -144,7 +144,7 @@ body.home {
 
 .intro {
     background: #eaeaea;
-    color: #333;
+    color: #393E41;
     padding-bottom: 2em;
 }
 
@@ -157,8 +157,8 @@ body.home {
 
 .top-3 li {
     margin-bottom: 1em;
-    background: #fff;
-    color: #333;
+    background: #F6F7EB;
+    color: #393E41;
 }
 
 .top-3 .content-title {
@@ -178,8 +178,8 @@ body.home {
 /* other-langs */
 
 .other-langs {
-    background: #fff;
-    color: #333;
+    background: #F6F7EB;
+    color: #393E41;
     padding: 2em;
 }
 
@@ -218,7 +218,7 @@ body.home {
     bottom: 0;
     width: 100%;
     height: 100%;
-    color: #fff;
+    color: #F6F7EB;
     background-color: rgba(51, 51, 51, .8);
 }
 
@@ -230,7 +230,7 @@ body.home {
 .testimonials q {
     font-size: 1.3em;
     line-height: 2;
-    color: #fff;
+    color: #F6F7EB;
     display: block;
     margin-bottom: 1em;
 }
@@ -238,7 +238,7 @@ body.home {
 .testimonials span {
     display: block;
     font-size: 30px;
-    color: #2690d4;
+    color: #E94F37;
 }
 
 .testimonials .slider>div {
@@ -254,25 +254,25 @@ body.home {
 
 .boxes .box {
     padding: 2em;
-    color: #fff;
+    color: #F6F7EB;
 }
 
 .boxes .box:first-child {
-    background: #2690d4;
+    background: #E94F37;
 }
 
 
 /* Footer */
 
 .main-footer {
-    padding: 2em;
-    background: #000;
-    color: #fff;
+    padding: 2em 0 3em;
+    background: #393E41;
+    color: #F6F7EB;
     text-align: center;
 }
 
 .main-footer a {
-    color: #f4e3b2;
+    color: #E94F37;
     text-decoration: none;
 }
 
@@ -306,7 +306,7 @@ body.home {
 /* Contact us */
 
 .contact-wrapper {
-    border: #333 1px solid;
+    border: #393E41 1px solid;
     margin-bottom: 1em;
 }
 
@@ -315,13 +315,13 @@ body.home {
 }
 
 .company-info {
-    background: #050517;
+    background: #E94F37;
 }
 
 .company-info>* {
     text-align: center;
     margin: 0 0 1rem 0;
-    color: #d3d5d7;
+    color: #F6F7EB;
 }
 
 .contact label {
@@ -344,17 +344,17 @@ body.home {
 }
 
 .contact form button {
-    background: #efc88b;
+    background: #E94F37;
+    color: #F6F7EB;
     border: 0;
     text-transform: uppercase;
 }
 
 .contact form button:hover,
 .contact form button:focus {
-    background: #888844;
-    color: #fff;
+    background: #d63117;
     outline: 0;
-    transition: background-color 2s ease-out;
+    transition: background-color 1s ease-out;
 }
 
 
