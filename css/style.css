@@ -141,7 +141,6 @@ body.home {
 
 
 /* intro */
-
 .intro {
     background: #eaeaea;
     color: #333;
@@ -230,7 +229,6 @@ body.home {
 
 
 /* languages pages */
-
 .language .img {
     margin-bottom: 1em;
 }
@@ -406,17 +404,16 @@ body.home {
         grid-area: lang-text;
     }
     /* languges page */
-    .language .content {
-        display: grid;
-        grid-template-columns: 5fr 1fr 2fr;
-        grid-template-areas: "lang-txt . lang-img";
-    }
     .language .img {
-        grid-area: lang-img;
+        float: right;
+        width: 30%;
     }
     .language .txt {
-        grid-area: lang-txt;
+        width: 60%;
+        float: left;
     }
+    
+    /* contact page */
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 2fr;
