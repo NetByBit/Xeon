@@ -82,7 +82,6 @@ body.home {
 .showcase {
     min-height: 100vh;
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
 }
 
@@ -118,7 +117,6 @@ body.home {
     flex: 1;
     width: 100%;
     background: transparent;
-    border: none;
 }
 
 .showcase nav a {
@@ -149,7 +147,6 @@ body.home {
 /* navbar */
 
 .navbar {
-    border: 1px solid #393E41;
     background-color: #e8e8e8;
     margin-bottom: 1em;
 }
