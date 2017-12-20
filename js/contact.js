@@ -87,7 +87,7 @@ $(function () {
         } else {
             swal({
                 title: "Success!",
-                text: "Thank you for contactiong us",
+                text: "Thank you for contacting us",
                 icon: "success",
             });
         }
