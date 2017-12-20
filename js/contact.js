@@ -17,50 +17,60 @@ $(function () {
 
     $('.name').blur(function () {
         if ($(this).val().length < 3) {
-            $(this).css('border', '1px solid #F00');
+            $(this).css('border', '1px solid #F00')
+                .parent().find('p').fadeIn(200);
             nameError = true;
         } else {
-            $(this).css('border', '1px solid #080');
+            $(this).css('border', '1px solid #080')
+                .parent().find('p').fadeOut(200);
             nameError = false;
         }
     });
 
     $('.company').blur(function () {
         if ($(this).val().length < 3) {
-            $(this).css('border', '1px solid #F00');
+            $(this).css('border', '1px solid #F00')
+                .parent().find('p').fadeIn(200);
             companyError = true;
         } else {
-            $(this).css('border', '1px solid #080');
+            $(this).css('border', '1px solid #080')
+                .parent().find('p').fadeOut(200);
             companyError = false;
         }
     });
 
     $('.email').blur(function () {
         if (!isEmail($(this).val())) {
-            $(this).css('border', '1px solid #F00');
+            $(this).css('border', '1px solid #F00')
+                .parent().find('p').fadeIn(200);
             emailError = true;
         } else {
-            $(this).css('border', '1px solid #080');
+            $(this).css('border', '1px solid #080')
+                .parent().find('p').fadeOut(200);
             emailError = false;
         }
     });
 
     $('.phone').blur(function () {
         if (!isPhone($(this).val())) {
-            $(this).css('border', '1px solid #F00');
+            $(this).css('border', '1px solid #F00')
+                .parent().find('p').fadeIn(200);
             phoneError = true;
         } else {
-            $(this).css('border', '1px solid #080');
+            $(this).css('border', '1px solid #080')
+                .parent().find('p').fadeOut(200);
             phoneError = false;
         }
     });
 
     $('.message').blur(function () {
         if ($(this).val().length < 5) {
-            $(this).css('border', '1px solid #F00');
+            $(this).css('border', '1px solid #F00')
+                .parent().find('p').fadeIn(200);
             msgError = true;
         } else {
-            $(this).css('border', '1px solid #080');
+            $(this).css('border', '1px solid #080')
+                .parent().find('p').fadeOut(200);
             msgError = false;
         }
     });

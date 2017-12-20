@@ -387,6 +387,13 @@ body.home {
     display: block;
 }
 
+.contact form p {
+    margin: 0;
+    font-size: .8em;
+    color: #f00;
+    display: none;
+}
+
 .contact form button,
 .contact form input,
 .contact form textarea {
