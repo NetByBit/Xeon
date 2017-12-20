@@ -16,7 +16,7 @@ $(function () {
         msgError = true;
 
     $('.name').blur(function () {
-        if ($(this).val().length < 4) {
+        if ($(this).val().length < 3) {
             $(this).css('border', '1px solid #F00');
             nameError = true;
         } else {
@@ -56,7 +56,7 @@ $(function () {
     });
 
     $('.message').blur(function () {
-        if ($(this).val().length < 3) {
+        if ($(this).val().length < 5) {
             $(this).css('border', '1px solid #F00');
             msgError = true;
         } else {

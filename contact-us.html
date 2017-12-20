@@ -2,82 +2,87 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact us</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <nav class="navbar">
+    <nav class="navbar">
+        <div class="container">
+            <h3 class="brand">
+                <a href="index.html">Xeon</a>
+            </h3>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="contact-us.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
-      <h1 class="brand">
-        <a href="index.html">Xeon</a>
-      </h1>
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="contact-us.html">Contact Us</a>
-        </li>
-      </ul>
+        <div class="contact-wrapper clearfix">
+            <div class="company-info">
+                <h3>Xeon</h3>
+                <ul>
+                    <li>44 Something st</li>
+                    <li>01111111111</li>
+                    <li>
+                        <a href="mailto://contact@Xeon.test">contact@Xeon.test</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Email Us</h3>
+                <form class="contact-form">
+                    <div>
+                        <label>Name</label>
+                        <input type="text" name="name" class="name">
+                    </div>
+                    <div>
+                        <label>Company</label>
+                        <input type="text" name="company" class="company">
+                    </div>
+                    <div>
+                        <label>Email Address</label>
+                        <input type="email" name="email" class="email">
+                    </div>
+                    <div>
+                        <label>Phone Number</label>
+                        <input type="text" name="phone" class="phone">
+                    </div>
+                    <div class="full">
+                        <label>Message</label>
+                        <textarea name="message" class="message" rows="5"></textarea>
+                    </div>
+                    <div class="full">
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-  </nav>
 
-  <div class="container">
-    <div class="contact-wrapper clearfix">
-      <div class="company-info">
-        <h3>Xeon</h3>
-        <ul>
-          <li>44 Something st</li>
-          <li>01111111111</li>
-          <li><a href="mailto://contact@Xeon.test">contact@Xeon.test</a></li>
-        </ul>
-      </div>
-      <div class="contact">
-        <h3>Email Us</h3>
-        <form class="contact-form">
-          <div>
-            <label>Name</label>
-            <input type="text" name="name" class="name">
-          </div>
-          <div>
-            <label>Company</label>
-            <input type="text" name="company" class="company">
-          </div>
-          <div>
-            <label>Email Address</label>
-            <input type="email" name="email" class="email">
-          </div>
-          <div>
-            <label>Phone Number</label>
-            <input type="text" name="phone" class="phone">
-          </div>
-          <div class="full">
-            <label>Message</label>
-            <textarea name="message" class="message" rows="5"></textarea>
-          </div>
-          <div class="full">
-            <button>Submit</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="main-footer clearfix">
+        <div class="container">
+            <div>copyright &copy; Xeon 2017 </div>
+            <div>Project By
+                <a href="http://web-point.github.io/" target="_blank">WebPoint</a>
+            </div>
+        </div>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="main-footer">
-    <div>copyright &copy; Xeon 2017 </div>
-    <div>Project By
-      <a href="http://web-point.github.io/" target="_blank">WebPoint</a>
-    </div>
-  </footer>
-
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/sweetalert.min.js"></script>
-  <script src="js/script.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

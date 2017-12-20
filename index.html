@@ -14,16 +14,36 @@
     <header class="showcase">
         <div class="bg-image"></div>
         <div class="showcase-overlay"></div>
+        <nav class="navbar">
+            <div class="container">
+                <h3 class="brand">
+                    <a href="index.html">Xeon</a>
+                </h3>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="scroll-to" data-value="top-3">TOP 3</a>
+                    </li>
+
+                    <li>
+                        <a href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         <div class="container">
             <h1>Welcome to Xeon</h1>
             <p>Xeon is a fanbase located in Egypt dedicated to explore all of the IT world and the programming languages of
                 it.
             </p>
-            <a href="#" class="btn scroll-to" data-value="other-langs">Read More</a>
+            <a href="#" class="btn scroll-to" data-value="intro">Read More</a>
         </div>
     </header>
 
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <div class="container">
             <h3 class="brand">
                 <a href="index.html">Xeon</a>
@@ -41,12 +61,12 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
 
     <!-- Main Area -->
     <main>
         <!-- intro -->
-        <section class="intro">
+        <section class="intro" id="intro">
             <div class="container">
                 <div class="content-wrap">
                     <h2 class="content-title">What's a programming language?</h2>
@@ -66,7 +86,7 @@
                 <ul>
                     <li>
                         <div class="card">
-                            <img src="img/java.jpg" alt="">
+                            <img src="img/java.jpg" alt="Java">
                             <div class="card-content">
                                 <h3 class="card-title">Java</h3>
                                 <p>Java is a general-purpose computer programming language that is concurrent, class-based,
@@ -78,7 +98,7 @@
                     </li>
                     <li>
                         <div class="card">
-                            <img src="img/python.jpg" alt="">
+                            <img src="img/python.jpg" alt="Python">
                             <div class="card-content">
                                 <h3 class="card-title">Python</h3>
                                 <p>Python is a widely used high-level programming language for general-purpose programming,
@@ -90,7 +110,7 @@
                     </li>
                     <li>
                         <div class="card">
-                            <img src="img/cs.jpg" alt="">
+                            <img src="img/cs.jpg" alt="C#">
                             <div class="card-content">
                                 <h3 class="card-title">C#</h3>
                                 <p>C# is a multi-paradigm programming language encompassing strong typing, imperative, declarative,
@@ -115,7 +135,7 @@
                     </p>
                     <div class="languages-list">
                         <div class="lang clearfix">
-                            <img src="img/ror.png">
+                            <img src="img/ror.png" alt="Ruby on Rails">
                             <div>
                                 <h3>Ruby</h3>
                                 <p>Ruby (also known as Ruby on Rails) is a major supplier of web apps. Ruby is popular due to
@@ -123,7 +143,7 @@
                                     demand these days!</p>
                             </div>
                         </div>
-                        <div class="lang clearfix">
+                        <div class="lang clearfix" alt="JavaScript">
                             <img src="img/js.jpg">
                             <div>
                                 <h3>JavaScript</h3>
@@ -135,7 +155,7 @@
                             </div>
                         </div>
                         <div class="lang clearfix">
-                            <img src="img/c.png">
+                            <img src="img/c.png" alt="Objective C">
                             <div>
                                 <h3>Objective-C</h3>
                                 <p>Objective-C is the programming language behind iOS apps. Apple's new language Swift is rising
@@ -145,7 +165,7 @@
                             </div>
                         </div>
                         <div class="lang clearfix">
-                            <img src="img/PHP.jpg">
+                            <img src="img/PHP.jpg" alt="PHP">
                             <div>
                                 <h3>PHP</h3>
                                 <p>
@@ -217,9 +237,11 @@
 
     <!-- Footer -->
     <footer class="main-footer clearfix">
-        <div>copyright &copy; Xeon 2017 </div>
-        <div>Project By
-            <a href="http://web-point.github.io/" target="_blank">WebPoint</a>
+        <div class="container">
+            <div>copyright &copy; Xeon 2017 </div>
+            <div>Project By
+                <a href="http://web-point.github.io/" target="_blank">WebPoint</a>
+            </div>
         </div>
     </footer>
 
